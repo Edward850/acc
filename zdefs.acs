@@ -984,6 +984,14 @@
 #define FHF_NORANDOMPUFFZ	1
 #define FHF_NOIMPACTDECAL	2
 
+// PickActor flags
+
+#define	PICKAF_FORCETID			1
+#define	PICKAF_RETURNTID		2
+
+// magic value to set the ice translation through ACS
+#define TRANSLATION_ICE 0x100007
+
 // Actor flags
 #define MF_SPECIAL          0x00000001
 #define MF_SOLID            0x00000002
@@ -1068,3 +1076,5 @@
 #define WARPF_BOB 0x800
 #define WARPF_MOVEPTR 0x1000
 #define WARPF_USEPTR 0x2000
+#define WARPF_COPYVELOCITY 0x4000
+#define WARPF_COPYPITCH 0x8000
